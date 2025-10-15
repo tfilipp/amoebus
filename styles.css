@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Diagramatika Display";
+    src: url("fonts/DiagramatikaDisplay.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Diagramatika Display";
+    overflow: hidden;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    padding-left: 16px;
+}
+.btm-text {
+    font-family: 'Diagramatika Display';
+    font-weight: 400;
+    font-size: 128px;
+
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.l-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.l-link:hover {
+    background: black;
+    color: white;
+    font-weight: 900;
+}
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    gap: 16px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #000000;
+}
+#n-ticker {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
