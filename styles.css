@@ -24,7 +24,18 @@
     font-family: 'Diagramatika Display';
     font-weight: 400;
     font-size: 128px;
+}
 
+@media screen and (max-width: 768px) {
+    .bottom {
+        display: none;
+    }
+    .l-link {
+        font-size: 48px;
+    }
+    #n-ticker {
+        font-size: 24px;
+    }
 }
 .links {
     display: flex;
