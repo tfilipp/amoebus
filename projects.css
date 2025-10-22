@@ -1,0 +1,76 @@
+
+.main {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+    gap: 10px;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor:grab;
+    height: 480px;
+}
+.card:active {
+    cursor:grabbing;
+    
+}
+.sc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    gap: 10px;
+    height: 480px;;
+    background: #000000;
+}
+.tc-text {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.tc-wrap {
+    margin: 0 auto;
+    font-size: 96px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #000000;
+}
+.t-top {
+    font-size: 48px;
+}
+.t-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+.top-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#i-00 {
+    background-color: #282828;
+    color: #93ABBD;
+}
+#i-01 {
+    background: #A9458B;
+    color: #fff;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Diagramatika Display";
+    src: url("fonts/DiagramatikaDisplay.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Diagramatika Display";
+    box-sizing: border-box;
+}
