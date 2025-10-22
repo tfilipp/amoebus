@@ -1,4 +1,3 @@
-
 .main {
     position: absolute;
     left: 0px;
@@ -6,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
 }
+
 .card {
     display: flex;
     flex-direction: column;
@@ -14,13 +14,14 @@
     padding: 48px;
     gap: 10px;
     transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor:grab;
+    cursor: grab;
     height: 480px;
 }
+
 .card:active {
-    cursor:grabbing;
-    
+    cursor: grabbing;
 }
+
 .sc {
     display: flex;
     flex-direction: row;
@@ -28,13 +29,15 @@
     align-items: center;
     padding: 48px;
     gap: 10px;
-    height: 480px;;
+    height: 480px;
     background: #000000;
 }
+
 .tc-text {
     font-size: 48px;
     color: #FFFFFF;
 }
+
 .tc-wrap {
     margin: 0 auto;
     font-size: 96px;
@@ -43,9 +46,11 @@
     text-align: right;
     color: #000000;
 }
+
 .t-top {
     font-size: 48px;
 }
+
 .t-bottom {
     display: flex;
     flex-direction: row;
@@ -56,6 +61,7 @@
     margin: 0 auto;
     width: 100%;
 }
+
 .top-wrapper {
     width: 100%;
     display: flex;
@@ -70,7 +76,71 @@
     background-color: #282828;
     color: #93ABBD;
 }
+
 #i-01 {
     background: #A9458B;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        position: static;
+        left: auto;
+        right: auto;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+        margin-top: 16px;
+    }
+
+    .card {
+        padding: 24px;
+        height: auto;
+        min-height: 280px;
+        gap: 16px;
+    }
+
+    .card:active {
+        cursor: grabbing;
+    }
+
+    .sc {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        height: auto;
+        min-height: 280px;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .tc-text {
+        font-size: 28px;
+    }
+
+    .tc-wrap {
+        font-size: 48px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .t-top {
+        font-size: 32px;
+    }
+
+    .t-bottom {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .t-bottom img {
+        max-width: 100%;
+        height: auto;
+    }
 }
