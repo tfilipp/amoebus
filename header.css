@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch; /* Высота зависит от содержимого */
     position: sticky;
     left: 0px;
     right: 0px;
@@ -29,6 +29,7 @@
     align-items: center;
     color: #FFFFFF;
     text-decoration: none;
+    
 }
 .dir {
     display: flex;
@@ -36,6 +37,7 @@
     align-items: center;
     padding: 0px;
     backdrop-filter: blur(10px);
+    align-items: stretch; /* Высота зависит от содержимого */
 }
 .dir-path {
     display: flex;
@@ -59,4 +61,37 @@
     font-weight: 400;
     font-size: 36px;
     color: #000000;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    
+    .back {
+        padding: 8px 12px;
+        font-size: 24px;
+        white-space: nowrap;
+    }
+    
+    /* Отключаем hover на мобильных */
+    .back:hover {
+        padding: 8px 12px;
+        font-size: 24px;
+    }
+    
+    .dir {
+        flex: 1;
+        overflow: hidden;
+    }
+    
+    .dir-path {
+        padding: 8px;
+    }
+    
+    .dir-arrow {
+        padding: 8px 0px;
+    }
+    
+    .d-label {
+        font-size: 24px;
+    }
 }

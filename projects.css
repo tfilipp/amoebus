@@ -74,3 +74,45 @@
     background: #A9458B;
     color: #fff;
 }
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr; /* 1 колонка на мобилах */
+    }
+    
+    .card {
+        height: auto;
+        min-height: 320px;
+        padding: 32px;
+        transition: none; /* Убираем все transition */
+    }
+    
+    /* Убираем ВСЕ hover эффекты на мобильных */
+    .card:hover {
+        transform: none;
+    }
+    
+    .card:active {
+        transform: none;
+    }
+    
+    .sc {
+        height: auto;
+        min-height: 320px;
+        padding: 32px;
+        transition: none;
+    }
+    
+    .tc-text {
+        font-size: 32px;
+    }
+    
+    .tc-wrap {
+        font-size: 64px;
+    }
+    
+    .t-top {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,36 @@
+.main {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 48px;
+gap: 10px;
+bottom: 0;
+}
+.t-container {
+    display: flex;
+    padding: 0px;
+}
+.tc-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+}
+.t-bottom {
+    display: flex;
+    padding: 0px;
+}
+.tb-text {
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+align-self: flex-end;
+text-align: right;
+width: 100%;
+}
+.link {
+    color: #000;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.link:hover {
+    color: #0000007d;
+}
