@@ -15,7 +15,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 .l-link {
     font-style: normal;
@@ -58,4 +57,8 @@
     display: flex;
     align-items: center;
 
+}
+body {
+    background: url("res/image.png");
+    background-size: auto;
 }
